@@ -1,0 +1,1 @@
+// var idade = prompt("Diga sua idade")

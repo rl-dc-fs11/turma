@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .check-list {
+            margin: 0;
+            cursor: pointer;
+        }
+
+        /*⬜*/
+        .check-list li {
+            position: relative;
+            list-style-type: "\2B1C";
+        }
+
+        /*✅*/
+        .check-list li.riscado {
+            color: #00D26A;
+            list-style-type: "\2705";
+        }
+
+        body {
+            font-size: 1.6rem;
+            /* 18px */
+            background-color: #efefef;
+            color: #324047
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+            <h2>Lista do café</h2>
+            <ul class="check-list">
+                <li class="riscado"><del>Pão</del></li>
+                <li class="riscado"><del>Café</del></li>
+                <li>Leite</li>
+                <li>Queijo</li>
+                <li>Manteiga</li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>

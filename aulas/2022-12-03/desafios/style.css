@@ -1,0 +1,21 @@
+body {
+    font-size: 1.6rem;
+    /* 18px */
+    background-color: #efefef;
+    color: #324047;
+    padding: 0 2rem;
+}
+
+.riscado {
+    color: #00a8a8;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+ol li::marker {
+    font-size: 32px;
+    color: orange;
+   
+}

@@ -1,0 +1,16 @@
+label {
+    display: block;
+}
+
+input, select, textarea {
+    display: block;
+    margin: 16px 0;
+}
+
+.semquebra {
+    display: inline-block;
+}
+
+textarea {
+    resize: none;
+}
