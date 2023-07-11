@@ -1,0 +1,4 @@
+[
+  { "nome": "Ivan", "matricula": "007", "ativo": true },
+  { "nome": "Victor", "matricula": "0800", "ativo": true }
+]
