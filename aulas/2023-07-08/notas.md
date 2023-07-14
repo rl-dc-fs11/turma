@@ -40,3 +40,9 @@ O [código](./codigo) fornecido apresenta um exemplo simples de criação de um 
 
 Essas são apenas algumas notas sobre o conteúdo abordado nesta aula. Continue praticando e explorando os conceitos apresentados para aprofundar seu conhecimento em desenvolvimento web com Node.js.
 
+### Apoio
+
+- https://www.digitalocean.com/community/tutorials/how-to-create-a-web-server-in-node-js-with-the-http-module-pt
+- https://dev.to/thiagomr/como-funciona-o-express-js-criando-um-http-server-express-like-do-zero-sem-frameworks-125p
+- https://expressjs.com/pt-br/starter/hello-world.html
+- https://www.geeksforgeeks.org/what-are-the-differences-between-http-module-and-express-js-module/
