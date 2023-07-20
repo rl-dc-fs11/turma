@@ -1,15 +1,6 @@
-# Aula - 2023-07-08 - Servidor http e fs
+# Aula - 2023-07-15 - Servidor MVC
 
-Esta aula foi realizada em 08 de julho de 2023.
-
-## Planejamento
-
-- [x] Pacotes essenciais
-- [x] http
-- [x] fs
-- [x] express
-- [x] Exercício
-
+Esta aula foi realizada em 15 de julho de 2023.
 ## Materiais
 
 - [Notas da Aula](./notas.md)
