@@ -15,6 +15,16 @@ function salvarAlunosNoArquivo(aluno = {}) {
 
   fs.writeFileSync(PATH_ALUNOS, JSON.stringify(alunos));
 }
+function deletarAlunoDoArquivo(id) {
+  const alunos = buscarAlunosNoArquivo();
+  if (id >= 1 && id <= alunos.length) {
+    alunos.splice(id - 1, 1);
+    fs.writeFileSync(PATH_ALUNOS, JSON.stringify(alunos));
+    return true;
+  }
+
+  return false; 
+}
 
 const alunosServices = {
   buscar: () => {
@@ -29,6 +39,9 @@ const alunosServices = {
   cadastrar: (aluno) => {
     salvarAlunosNoArquivo(aluno);
     return aluno;
+  },
+  deletar: (id) => {
+    return deletarAlunoDoArquivo(id);
   },
 };
 

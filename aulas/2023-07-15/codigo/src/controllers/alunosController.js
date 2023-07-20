@@ -16,6 +16,16 @@ const alunosController = {
     const aluno = alunosServices.cadastrar(req.body)
     res.send(aluno);
   },
+  deletar: (req, res) => {
+    const id = req.params.id;
+
+    if (alunosServices.deletar(id)) {
+      res.status(200).json({ message: "Aluno excluído com sucesso." });
+    } else {
+      res.status(404).json({ error: "Aluno não encontrado." });
+    }
+  },
 };
+
 
 module.exports = alunosController;
