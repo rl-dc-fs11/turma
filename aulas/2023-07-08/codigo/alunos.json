@@ -1,4 +1,6 @@
 [
-  { "nome": "Ivan", "matricula": "007", "ativo": true },
-  { "nome": "Victor", "matricula": "0800", "ativo": true }
+  { "nome": "Reino", "ativo": true },
+  { "nome": "Ivan", "ativo": true },
+  { "nome": "Ivan", "ativo": true },
+  { "nome": "John", "ativo": true }
 ]
