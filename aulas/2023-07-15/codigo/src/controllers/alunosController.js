@@ -13,8 +13,16 @@ const alunosController = {
   },
 
   salvar: (req, res) => {
+
     const aluno = alunosServices.cadastrar(req.body)
+    
     res.send(aluno);
+  },
+
+  deletarPeloId: (req, res) => {
+    
+    alunosServices.deletarPeloId(req.params.id);
+    res.sendStatus(204);
   },
 };
 

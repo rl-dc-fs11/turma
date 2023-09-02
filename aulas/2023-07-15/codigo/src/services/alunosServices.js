@@ -1,4 +1,5 @@
-const fs = require('fs');
+const fs = require("fs");
+const Aluno = require("../models/Aluno");
 
 const PATH_ALUNOS = "./data/alunos.json";
 
@@ -16,6 +17,10 @@ function salvarAlunosNoArquivo(aluno = {}) {
   fs.writeFileSync(PATH_ALUNOS, JSON.stringify(alunos));
 }
 
+function atualizarAlunosNoArquivo(alunos = []) {
+  fs.writeFileSync(PATH_ALUNOS, JSON.stringify(alunos));
+}
+
 const alunosServices = {
   buscar: () => {
     return buscarAlunosNoArquivo();
@@ -23,12 +28,22 @@ const alunosServices = {
 
   buscarPeloId: (id) => {
     const alunos = buscarAlunosNoArquivo();
-    return alunos[id-1]
+    return alunos[id - 1];
   },
 
   cadastrar: (aluno) => {
-    salvarAlunosNoArquivo(aluno);
+    
+    const novoAluno = new Aluno(aluno.nome, aluno.ativo)
+
+    salvarAlunosNoArquivo(novoAluno);
     return aluno;
+  },
+
+  deletarPeloId: (id) => {
+    const alunos = buscarAlunosNoArquivo();
+    
+    alunos.splice(id - 1, 1);
+    atualizarAlunosNoArquivo(alunos);
   },
 };
 
