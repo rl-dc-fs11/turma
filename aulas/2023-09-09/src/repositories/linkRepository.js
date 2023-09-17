@@ -1,9 +1,13 @@
 const pool = require("../config/db");
 
+const { PrismaClient } = require('@prisma/client');
+
+const prisma = new PrismaClient()
+
 const buscar = async () => {
-  const resposta = await pool.query("select * from link");
-  console.log(resposta.rows);
-  return resposta.rows;
+  const links = await prisma.link.findUnique();
+  console.log(links);
+  return links;
 };
 
 const buscarPeloCode = async (code) => {
